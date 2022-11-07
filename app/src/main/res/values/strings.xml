@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Games Day</string>
+    <string name="search">Search</string>
+    <string name="default_content_description">default_content_description</string>
+    <string name="release_date">Release date\u0020</string>
+    <string name="played">\u0020played</string>
+    <string name="favorite">Favorite</string>
+    <string name="home">Home</string>
+    <string name="games_for_you">Games For You</string>
+    <string name="favorite_games">Favorite Games</string>
+    <string name="detail">Detail</string>
+
+    <string name="network_is_unstable">Your network is unstable,</string>
+    <string name="retry">Retry?</string>
+    <string name="favorite_empty">You don\'t have a favorite game yet</string>
+    <string name="empty" />
+</resources>

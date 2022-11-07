@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_gd</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.GamesDay</item>
+    </style>
+</resources>

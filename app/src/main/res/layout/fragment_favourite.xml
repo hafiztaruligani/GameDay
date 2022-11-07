@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:paddingVertical="@dimen/primary_padding_vertical"
+    android:paddingHorizontal="@dimen/primary_padding_horizontal"
+    tools:context=".presentation.favourite.FavouriteFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/games_rc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/font_big"
+        android:text="@string/favorite_empty"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</FrameLayout>
