@@ -6,5 +6,6 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/logo_gd</item>
 
         <item name="postSplashScreenTheme">@style/Theme.GamesDay</item>
+
     </style>
 </resources>

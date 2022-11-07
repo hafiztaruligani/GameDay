@@ -4,7 +4,6 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.hafiztaruligani.gamesday.data.local.entities.FavoriteGameEntity
 import com.hafiztaruligani.gamesday.data.local.entities.GameDetailEntity
 import com.hafiztaruligani.gamesday.data.local.entities.GameSimpleEntity
 import com.hafiztaruligani.gamesday.data.local.entities.RemoteKeyEntity
@@ -13,7 +12,6 @@ import com.hafiztaruligani.gamesday.data.local.entities.RemoteKeyEntity
     entities = [
         GameSimpleEntity::class,
         GameDetailEntity::class,
-        FavoriteGameEntity::class,
         RemoteKeyEntity::class
     ],
     version = 1,

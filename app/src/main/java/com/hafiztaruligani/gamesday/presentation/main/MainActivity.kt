@@ -8,6 +8,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -45,8 +46,12 @@ class MainActivity : AppCompatActivity() {
         splashScreen = installSplashScreen()
         splashScreen.setKeepOnScreenCondition{true}
 
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // disable night mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         navController = findNavController(R.id.nav_host)
 
@@ -126,8 +131,8 @@ class MainActivity : AppCompatActivity() {
 
     // setup favorite button
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        favOff = ResourcesCompat.getDrawable(resources, R.drawable.ic_baseline_favorite_24_off, null)
-        favOn = ResourcesCompat.getDrawable(resources, R.drawable.ic_baseline_favorite_24_on, null)
+        favOff = ResourcesCompat.getDrawable(resources, R.drawable.ic_baseline_favorite_24_off, theme)
+        favOn = ResourcesCompat.getDrawable(resources, R.drawable.ic_baseline_favorite_24_on, theme)
 
         menuInflater.inflate(R.menu.action_bar_menu, menu)
         favoriteButton = menu?.findItem(R.id.favorite_button)
