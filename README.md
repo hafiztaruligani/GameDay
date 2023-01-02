@@ -1,5 +1,5 @@
 # GameDay
-This application provides information about games, built using Koltin language, Clean Architecture with MVVM Design Pattern, Single Activity (Using Navigation Component), Unit Test, and several supporting libraries, such as:
+This application provides information about games, built using Kotlin language, Clean Architecture with MVVM Design Pattern, Single Activity (Using Navigation Component), Unit Test, and several supporting libraries, such as:
 
 - Coroutines
 - Dagger Hilt
